@@ -586,17 +586,6 @@ local listPre = {
 	[648454481]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/GPOPre.lua', true))()",
 }
 
-MakePrGui()
-CreateSupportList({"GPO - Grand Piece Online","Blox Fruit","King Legacy","Ro Fruit","Collect All Pets","Tower of Hell","Break In","Arsenal",
-	"Pet Simulator X","Mad City","Viet Nam Piece","Field Trip Z","Giant Survival!",
-	"Murder Mystery 2","steve's one piece","Anime Fighters Simulator","Tradelands","Dungeon Quest","Two Piece"
-})
-_G.HoHoLoaded = true
-if listPre[game.GameId] ~= nil then
-	getgenv().messagebox = function()end
-	loadstring(listPre[tonumber(game.GameId)])()
-elseif list[game.GameId] ~= nil then
-	loadstring(list[tonumber(game.GameId)])()
 else
 	game.Players.LocalPlayer:Kick("game not support, discord.gg/hohohub")
 end
